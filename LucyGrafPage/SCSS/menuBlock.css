@@ -1,0 +1,74 @@
+#menu-block {
+  position: relative;
+  float: left;
+  top: -10%;
+  left: 0px;
+  background-color: #00000080;
+  color: white;
+  border-radius: 0px 0px 50px 0px;
+  height: 110%;
+  width: 50%;
+  overflow: hidden;
+}
+
+#btn {
+  float: right;
+  width: 100px;
+  height: 50px;
+  color: white;
+  margin: 5px 0px 2px 2px;
+  border: none;
+  -webkit-animation: button 1s;
+          animation: button 1s;
+  background: none;
+  outline: none;
+}
+
+.list-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.list-menu ul {
+  float: left;
+  width: 100%;
+  margin: 0;
+}
+
+.list-menu ul li {
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 65px;
+  list-style-type: none;
+  text-align: center;
+  color: #fff;
+  margin-top: 55px;
+}
+
+.list-menu ul li:nth-child(1) {
+  margin-top: 150px;
+}
+
+.icon-social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*# sourceMappingURL=menuBlock.css.map */
