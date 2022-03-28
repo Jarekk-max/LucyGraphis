@@ -1,0 +1,303 @@
+
+.home,.about,.picture,.contact-menu,.faq,.icon-instagram,.icon-facebook,.icon-mail{
+transition: 0.3s linear ;
+cursor: pointer;
+animation:animationSlide 1s ease-out;
+padding:0px;
+}
+
+
+.home:hover,.about:hover,.picture:hover,.contact-menu:hover,.faq:hover,.icon-instagram:hover,.icon-facebook:hover,.icon-mail:hover{
+    transition: 0.2s linear; ;
+    text-shadow: 0 1px 0 #CCCCCC,
+     0 2px 0 #c9c9c9, 0 3px 0 #bbb,
+      0 4px 0 #b9b9b9, 0 5px 0 #aaa,
+       0 6px 1px rgba(0,0,0,.1), 
+       0 0 5px rgba(0,0,0,.1),
+        0 1px 3px rgba(0,0,0,.3),
+         0 3px 5px rgba(0,0,0,.2),
+          0 5px 10px rgba(0,0,0,.25),
+           0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.15),
+             2px 2px 2px rgba(206,89,55,0);
+             width: 100%;
+             border-radius:5%;
+             animation:animationSlide 1s linear;
+}
+/* .home a:hover,.about a:hover,.picture a:hover,.contact-menu a:hover,.faq a:hover{
+   transition: 0.2s linear;
+    background-color:rgba(133, 0, 0, 0.527);
+    width: 100%;
+border-radius:5%;
+} */
+.home a:hover,.about a:hover,.picture a:hover,.contact-menu a:hover,.faq a:hover{
+    transition:0.3s ease-out;
+    padding:0px 150px;
+    background-color:#03030381; 
+    border-radius:10px;
+}
+@keyframes animationSlide {
+    0%
+    {
+        width: 0%;
+        height: 0%;
+        margin-left:-2500px;
+    }
+    100%{
+        margin-left:0;
+        width:100%;
+        height: 100%;
+    }
+}
+@keyframes hideMenuBlock {
+    0%{
+        left: -5%;
+    }
+    100%{
+        left: -50%;
+    }
+}
+@keyframes showMenuBlock {
+    0%{
+        left: -50%;
+    }
+    100%{
+        left: -6%;
+    }
+}
+/* TO MENU ANIMATION HAMBURGER */
+@keyframes rotate-one {
+    0%{
+      transform:translate(0px,0px) rotate(0deg);
+    }
+    100%{
+    transform:translate(-5px,10px) rotate(-45deg);
+    }
+  }
+  @keyframes rotate-two {
+    0%{
+      transform:translate(0px,0px) rotate(0deg);
+    }
+    100%{
+    transform:translate(-5px,-10px) rotate(45deg);
+    }
+  }
+  
+  @keyframes replay-rotate-one {
+    0%{
+      transform:translate(-5px,10px) rotate(-45deg);
+     
+    }
+    100%{
+   
+    transform:translate(0px,0px) rotate(0deg);
+    }
+  }
+  @keyframes replay-rotate-two {
+    0%{
+      transform:translate(-5px,-10px) rotate(45deg);
+    }
+    100%{
+    transform:translate(0px,0px) rotate(0deg);
+    }
+  }
+  
+  @keyframes opacity-transfrom {
+    0%{
+      opacity: 1;
+    }
+    100%{
+    opacity:0;
+  }
+  }
+  @keyframes opacity-transfrom-revers {
+    0%{
+      opacity: 0;
+    }
+    100%{
+    opacity:1;
+   
+    }
+  }
+    #hamburger-line0,  #hamburger-line1,  #hamburger-line2{
+        height: 6px;
+        width: 50px;
+        background-color:#0800FF;
+        border-radius:20px;
+        
+    }
+    #hamburger-line1{
+        margin-top:10px;
+    }
+    #hamburger-line2{
+        margin-top:11px;
+    }
+    .box-buttons:hover > .button-order{
+      background-color:#094074;
+      clip-path: circle(70.7% at 50% 50%);
+      animation:kolo 0.5s;
+    }
+
+    @keyframes kolo {
+      0%{
+
+        clip-path: circle(0.4% at 50% 50%);
+        background-color:#094074;
+      }
+      100%{
+   
+        clip-path: circle(70.7% at 50% 50%);
+        background-color:#094074;
+      }
+    }
+    @keyframes reversKolo {
+     0%{
+   
+        clip-path: circle(70.7% at 50% 50%);
+        background-color:#094074;
+      }
+      100%{
+
+        clip-path: circle(0.4% at 50% 50%);
+        background-color:#094074;
+      }
+    }
+    @media(max-width:1200px){
+      .phots-to-the-show{
+          flex-direction:column !important;
+          }
+      .photos-one,.photos-two{
+        margin-top:15%;
+      }
+      .box-photos-two{
+      margin-top:150px !important;  
+      }
+      
+  }
+
+  .box-photos-one:hover, .box-photos-two:hover{
+    transition: 0.5s linear;
+    margin-top:10px;
+    background-color: #000000d5;
+    -webkit-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.91); 
+    box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.91);
+  }
+
+  .box-photos-one:hover > .box-buttons,.box-photos-two:hover > .box-buttons{
+    transition: 0.4s linear;
+    background-color:rgb(35, 150, 138);
+  }
+  /* .box-photos-one:hover > .photos-one, .box-photos-two:hover > .photos-two{
+    transform:translateY(-90px) ;
+    transition: 0.4s ease;
+    } */
+
+
+    .box-photos-one:hover > .photos-one, .box-photos-two:hover > .photos-two {
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-timing-function: ease;
+      animation-timing-function: ease;
+      -webkit-animation-name: bounceInUp; 
+      animation-name: bounceInUp; 
+      transform:translateY(-90px) ;
+    transition: 0.4s ease;
+    }
+    
+    @-webkit-keyframes bounceInUp { 
+        0% { 
+     
+            -webkit-transform: translateY(0px); 
+        } 
+        40% { 
+
+            -webkit-transform: translateY(-100px); 
+        } 
+        60% { 
+            -webkit-transform: translateY(-60px); 
+        } 
+        100% { 
+            -webkit-transform: translateY(-90px); 
+        } 
+    } 
+    
+    @keyframes bounceInUp { 
+        0% { 
+            transform: translateY(0px); 
+        } 
+        40% {  
+            transform: translateY(-100px); 
+        } 
+        60% { 
+            transform: translateY(-60px); 
+        } 
+        100% { 
+            transform: translateY(-90px); 
+        } 
+    } 
+    
+    /* .bounceInUp { 
+        -webkit-animation-name: bounceInUp; 
+        animation-name: bounceInUp; 
+    } */
+    
+    @keyframes miniMenu {
+      0%{
+        opacity:0;
+        right: -100%;
+      }
+      50%{
+        opacity:0.5;
+      }
+      100%{
+        opacity:1;
+        right: 0%;
+      }
+    }
+
+    @keyframes miniMenuHidden {
+      0%{
+        opacity: 1;
+        right: 0%;
+      }
+      50%{
+        opacity:0.4;
+      }
+      100%{
+        opciaty:0;
+        right: -100%;
+      }
+    }
+
+nav #mobilemenu li:hover a{
+  color:#0800FF;
+  font-size:25px;
+  transition: linear 0.2s;
+}
+
+#blockmobile .list-menu-mobile li:hover a{
+padding:10px 20px;
+  background-color:rgba(0, 4, 255, 0.644);
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+  animation: blockmobile 0.2s ease-in;
+}
+
+@keyframes blockmobile{
+  0%{
+    padding:0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    opacity: 0;
+  }
+  50%{
+    opacity:0.5;
+  }
+  100%{
+    opacity:100;
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+
+  }
+}
+
+
+
+

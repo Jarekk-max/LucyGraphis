@@ -1,0 +1,36 @@
+@media (max-width: 1200px) {
+  #menu-block {
+    display: none;
+  }
+  #nav-home {
+    display: block !important;
+  }
+}
+
+@media (min-width: 1201px) {
+  #menu-block {
+    display: block !important;
+  }
+  #nav-home {
+    display: none !important;
+  }
+  #blockmobile {
+    display: none !important;
+  }
+  #menublock-index {
+    display: none !important;
+  }
+  #btn {
+    display: none !important;
+  }
+}
+
+@media (max-width: 900px) {
+  #mobilemenu {
+    display: none;
+  }
+  #btn {
+    display: block !important;
+  }
+}
+/*# sourceMappingURL=mediacss.css.map */

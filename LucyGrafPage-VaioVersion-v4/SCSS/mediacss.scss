@@ -1,0 +1,68 @@
+@import "colors.scss";
+
+// @media (min-height:1080px){
+//     .list-menu{
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         width: 100%;
+//         ul{
+//             float:left;
+//             width: 100%;
+//             margin:0;
+//             li{
+//                 cursor:pointer;
+//                 font: {
+//                     family:Arial, Helvetica, sans-serif;
+//                     size:45px;
+//                 }
+//                 list-style-type: none;
+//                 text-align:center;
+//                 color:#fff;
+//                 margin-top:35px;
+//             }
+//             li:nth-child(1){
+//                 margin-top:100px;
+//             }
+//         }
+//     }
+
+
+
+// }
+@media (max-width:1200px){
+    #menu-block{
+        display: none;
+    }
+    #nav-home{
+        display:block !important;
+    }
+}
+@media (min-width:1201px){
+    #menu-block{
+        display: block !important;
+    }
+    #nav-home{
+        display: none !important;
+    }
+    #blockmobile{
+        display: none !important;
+    }
+    #menublock-index{
+        display:none !important;
+    }
+    #btn{
+        display: none !important;
+    }
+}
+
+
+@media (max-width:900px){
+    #mobilemenu{
+        display: none;
+    }
+    #btn{
+        display: block !important;
+    }
+}
+

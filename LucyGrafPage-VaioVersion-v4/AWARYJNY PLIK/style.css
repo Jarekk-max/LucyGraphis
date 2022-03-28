@@ -1,0 +1,315 @@
+body::-webkit-scrollbar{
+    width: 12px;
+}
+body::-webkit-scrollbar-track{
+    background-color:none;
+}
+body::-webkit-scrollbar-thumb{
+    border-radius:10px;
+    background:linear-gradient(to top, rgb(126, 0, 0), rgb(214, 0, 0));
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+    padding: 0;
+}
+/* FRONT-START */
+#start{
+    float:left;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.background-pic{
+    /* position: absolute; */
+    float:left;
+    width: 100%;
+    height:100vh;
+    background-image:url("../zdjecia/3-1.jpg");
+    background-size:2500px;
+    background-position-x:-250px;
+    background-position-y: -150px;
+    overflow:hidden;
+}
+#menu-block{
+    position:relative;
+    float:left;
+    top:-10%;
+    left: 0px;
+    background-color:#037e9d80;
+    color:white;
+    
+    border-radius: 0px 0px 50px 0px;
+    height: 110%;
+    width: 30%;
+    overflow: hidden;
+}
+#btn {
+    position: fixed;
+    width: 250px;
+    height: 50px;
+    color: white;
+    margin: 5px 0px 2px 2px;
+    border: none;
+    animation: button 1s;
+    background: none;
+    outline: none;
+}
+.list-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.list-menu ul{
+    float: left;
+    width: 100%;
+    margin:0;
+}
+.list-menu ul li{
+    cursor:pointer;
+    font-family:Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    text-align:center;
+    color:#fff;
+    font-size: 65px;
+    margin-top:55px;
+}
+
+.list-menu ul li:nth-child(1){
+    margin-top:150px;
+}
+.icon-social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:60px;
+    margin-left:auto;
+    margin-right: auto;
+}
+/* --------------- */
+/* ABOUT BOX */
+
+#description{
+   float:left;
+    width: 100%;
+background-color:#F3FCF0;
+padding-bottom:250px;
+overflow: hidden;
+}
+#description > .text-header-about{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #191919;
+    margin-top:10%;
+}
+
+.description-box{
+    float:left;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:5%;
+}
+.about-of-pictures-box,.about-of-maker-box{
+    text-align: center;
+
+}
+.about-of-pictures-box{
+    margin-top:250px;
+}
+.about-of-maker-box{
+    margin-top:-250px;
+}
+.about-of-pictures-box > h1,.about-of-maker-box > h1{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(48, 48, 48);   
+}
+
+.about-of-maker,.about-of-pictures{
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:auto;
+}
+.about-of-maker > h2,.about-of-pictures > h2{
+    color:#707070;
+}
+/* .line{
+    position: absolute;
+    width: 150%;
+    height: 20px;
+    background:linear-gradient(to top, rgb(235, 235, 235), rgb(180, 180, 180)) transparent;
+    transform: rotate(-27deg) translate(-10%,200%);
+} */
+/* .gray-block{
+    position: absolute;
+    content: ' ';
+    top:0%;
+    height:100%;
+    width: 100%;
+    background-color:#555;
+    transform: rotate(-29deg);
+
+} */
+/* ------------------------ */
+.line-break{
+    float:left;
+    width: 100%;
+    height: 20px;
+    background:linear-gradient(to top, #31AFD4, #F3FCF0) transparent;
+}
+/* PICTURES */
+#pictures{
+float:left;
+    width: 100%;
+background-color:#31AFD4;
+color:#fff;
+padding-bottom: 250px;
+}
+#pictures > h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: Tahoma;
+    text-transform: uppercase;
+    margin-top:100px;
+    
+}
+.phots-to-the-show{
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    text-align:center;;
+    margin-top:150px;
+}
+
+.photos-one,.photos-two{
+    width: 450px;
+    height: 450px;
+    overflow: hidden;
+    border-radius:10%;
+    transform:translateY(0px);
+    transition: 0.4s;
+}
+.photos-one > img, .photos-two > img {
+    width: 700px;
+    transform: translate(-10%,0%);
+    /* -webkit-box-shadow: 0px 0px 50px 11px #000000; 
+    box-shadow: 0px 0px 50px 11px #000000; */
+}
+
+.box-photos-one, .box-photos-two{
+    position: relative;
+    width: 450px;
+    height: 650px;
+    border-radius:20px;
+    margin-top:10px;
+    background-color: #00000063;
+    -webkit-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.91); 
+    box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.91);
+    padding:25px 60px 0px;
+    transition: 0.5s linear;
+}
+
+/* .buttons{
+    float:left;
+    width: 100%;
+    height: 50px;
+    background-color:#fff;
+    display: flex;
+    justify-content:space-between;
+    align-items:flex-start;
+} */
+.box-buttons{
+    float:left;
+    width: 35%;
+    height: 50px;
+    background-color:#011627;
+    border-radius: 25px;
+    margin-top:40px;
+}
+.box-buttons-sell{
+    float:right;
+    width: 45%;
+    height: 50px;
+    background-color:transparent;
+    border-radius: 25px;
+    margin-top:40px;
+    
+}
+.button-order{
+    float:left;
+    cursor: pointer;
+    text-transform: uppercase;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius:25px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    transition: linear 0.6s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* animation: reversKolo 1s ; */
+}
+
+
+.price{
+    float: right; 
+    background-color:transparent;
+    color:white;
+    border-radius:25px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.price > span{
+    font-family: Arial, Helvetica, sans-serif;   
+    text-transform: uppercase;
+    font-size:25px;
+}
+
+
+/* FOOTER */
+#footer-section{
+float:left;
+    width: 100%;
+}
+footer{
+    float:left;
+    width: 100%;
+    background-color:rgba(0, 51, 145, 0.89);
+    color:white;
+    text-align: center;
+    padding-top:20px;
+    padding-bottom:20px;
+    
+}
+footer > p {
+    text-align: center;
+    text-transform: uppercase;
+}
+footer > p > a{
+    color:rgb(207, 207, 207)
+}
+.social-media, .adress,.contact{
+    float:left;
+    margin-left:50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.instagram,.facebook,.postion-shop,.phone{
+    color:#afafaf;
+}
+a{
+    color:white;
+    text-decoration: none;
+}

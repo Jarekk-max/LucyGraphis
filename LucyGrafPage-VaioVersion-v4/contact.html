@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucy Graphis - Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animationstyle.css">
+    <link rel="stylesheet" href="css/fontello-exit/css/fontello.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="zdjecia/LucyGraphis — kopia.png" alt="logo">
+        </div>
+       <nav>
+        
+        <button id="btn" style="display:none;" onclick="miniActiveBlock()">
+            <div id="hamburger-line0"></div>
+            <div id="hamburger-line1"></div>
+            <div id="hamburger-line2"></div>
+        </button>
+       
+
+        <div id="mobilemenu">
+            <ol class="menu-list">
+                <li class="home-contact"><a href="index.html">Home</a></li>
+                <li  class="aboute-contact"><a href="index.html">About</a></li>
+                <li class="picture-contact"><a href="index.html">Picture</a></li>
+                <li class="contact-contact"><a href="#">Contact</a></li>
+                <li class="faq-contact"><a href="faq.html">Faq</a></li>
+            </ol>
+        </div>
+    </nav>
+
+    <nav id="blockmobile" style="display: none;">
+    <div class="icon-div" >
+        <i class="icon-logout"  onclick="miniActiveBlock()"></i>
+    </div>
+        <ol class="list-menu-mobile">
+            <li class="home-mobile"><a href="index.html">Home</a></li>
+            <li class="about-mobile"><a href="index.html">About</a></li>
+            <li class="picture-mobile"><a href="index.html">Picture</a></li>
+            <li class="contact-mobile"><a href="#">Contact</a></li>
+            <li class="faq-mobile"><a href="faq.html">Faq</a></li>
+        </ol>
+    </nav>
+    </header>
+<section class="contact">
+    <div class="namepage"><h1>Contact</h1></div>
+        <div class="form-box">
+            <div class="form">
+                <form method="post" action="mail.php">
+                    <div class="first-name"><input class="input-firstname" type="text" name="firstname" placeholder="Imię"></div>
+                    <div class="last-name"><input class="input-lastname" type="text" name="lastname" placeholder="Nazwisko"></div>
+                    <div class="numer"><input class="input-number" type="number" name="phonenumber" placeholder="Numer Telefonu"></div>
+                    <div class="textBox"> <textarea class="box-mail" name="textMail" id="Mail" cols="30" rows="10"></textarea></div>
+                </form>
+                <input class="button-mail" type="submit" value="Wyślij">
+            </div>
+        </div>
+</section>
+<section id="footer-section">
+    <footer><p>&copy; 2021, Współpraca z <a href="https://www.magicboots.pl/">MagicBoots.pl</a>, Witryna stworzona przez JK.</p>
+    </footer>
+</section>
+<script src="JS/script.js"></script>
+</body>
+</html>
